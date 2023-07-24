@@ -25,7 +25,7 @@ function App() {
     const onSendData = useCallback(() => {
       
           cartItems.map(cartItems => 
-            setArr([...arr, cartItems.title +" "+ cartItems.quantity+" шт"])
+            setArr([...arr, cartItems.title])
           )
 
       
