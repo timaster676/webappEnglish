@@ -18,7 +18,8 @@ function App() {
     const [street, setStreet] = useState('');
     const [subject, setSubject] = useState('physical');
     const {tg} = useTelegram();
-    const arr = ["ПЕРВОЕ", "ВТОРОЕ"];
+    const [arr, setArr] = useState([]);
+
     
 
     const onSendData = useCallback(() => {
@@ -56,10 +57,14 @@ function App() {
 
     const onChangeCountry = (e) => {
         setCountry(e.target.value)
+     
+       cartItems.map(cartItems => 
+        setArr([...arr,<h8>{cartItems.title} - {cartItems.quantity} шт./ </h8> ]))
     }
 
     const onChangeStreet = (e) => {
         setStreet(e.target.value)
+
     }
 
     const onChangeSubject = (e) => {
