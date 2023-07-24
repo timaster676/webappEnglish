@@ -59,7 +59,7 @@ function App() {
         setCountry(e.target.value)
      
        cartItems.map(cartItems => 
-        setArr([...arr,<h8>{cartItems.title} - {cartItems.quantity} шт./ </h8> ]))
+        setArr([...arr,cartItems.title+cartItems.quantity]))
     }
 
     const onChangeStreet = (e) => {
