@@ -24,9 +24,9 @@ function App() {
 
     const onSendData = useCallback(() => {
       
-          cartItems.map(cartItems => 
-            setArr([...arr, cartItems.title])
-          )
+          
+            setArr([...arr, 'ХУЙ'])
+         
 
       
         const data = {
