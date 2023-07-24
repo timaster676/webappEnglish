@@ -27,7 +27,7 @@ function App() {
 
 
       cartItems.map(cartItems => 
-        arr.push(cartItems.title+cartItems.quantity+"шт/" )
+        arr.push(cartItems.title+"-"+cartItems.quantity+"шт/" )
       )
       
           
