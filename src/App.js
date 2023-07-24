@@ -37,7 +37,7 @@ function App() {
 
     useEffect(() => {
         tg.MainButton.setParams({
-            text: 'Заказать'
+            text: 'Отправить данные'
         })
     }, [])
 
