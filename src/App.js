@@ -23,6 +23,8 @@ function App() {
     
 
     const onSendData = useCallback(() => {
+      cartItems.map(cartItems => 
+        setArr([...arr,cartItems.title+cartItems.quantity]))
         const data = {
             country,
             street,
@@ -58,8 +60,7 @@ function App() {
     const onChangeCountry = (e) => {
         setCountry(e.target.value)
      
-       cartItems.map(cartItems => 
-        setArr([...arr,cartItems.title+cartItems.quantity]))
+       
     }
 
     const onChangeStreet = (e) => {
