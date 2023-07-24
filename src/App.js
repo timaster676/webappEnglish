@@ -25,7 +25,7 @@ function App() {
     const onSendData = useCallback(() => {
       
           
-            setArr(...arr, 'ХУЙ')
+            setArr(...arr, ['ХУЙ'])
          
 
       
