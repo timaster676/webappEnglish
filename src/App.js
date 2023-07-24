@@ -24,13 +24,11 @@ function App() {
 
     const onSendData = useCallback(() => {
       
-        setArr([...arr, 
           cartItems.map(cartItems => 
-            <h8>{cartItems.title} - {cartItems.quantity} шт./ </h8> 
+            setArr([...arr, cartItems.title +" "+ cartItems.quantity+" шт"])
           )
 
-
-         ])
+      
         const data = {
             country,
             street,
