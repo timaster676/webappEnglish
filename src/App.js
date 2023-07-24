@@ -201,7 +201,7 @@ function App() {
             <input type="text" placeholder='Адрес'/> */}
              <p></p>
              
-            <Cart cartItems={cartItems} onCheckout={onCheckout2}/>
+            <Cart cartItems={cartItems} onCheckout={onSendData}/>
           </form>
         </Form>
       </div>
